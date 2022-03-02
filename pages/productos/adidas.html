@@ -14,33 +14,36 @@
     <body>
         <header>
             <!--Menu-->
-            <nav class="navbar">
-                <!--Logo-->
-                <div>
-                    <h4 class="col-md-1">US</h4>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFCC84;">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">US</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../catalogo.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../contacto.html">Contacto</a>
+                    </li>
+                  </ul>
                 </div>
-                <!--Barra navegación-->
-                <ul class="nav justify-content-center col-md-11">
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="../../index.html">Inicio</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="../catalogo.html">Catalogo</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="../nosotros.html">Nosotros</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="../contacto.html">Contacto</a></h5>
-                  </li>
-                </ul>
+              </div>
             </nav>
         </header>
-        <main>
-            <!--Seccon para el carrusel y el nombre del proucto-->
+        <main class="productoFlex">
+            <!--Seccion para el carrusel y el nombre del proucto-->
             <section class="row g-2">
                 <!--Carrusel-->
-                <div id="carouselExampleControls" class="carousel slide col-md-6" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide col-md-5" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="../../assets/imgProductos/adidas/adidasPro_0.jpg" class="d-block w-100" alt="...">
@@ -71,8 +74,11 @@
                     </button>
                 </div>
                 <!--Nombre del producto y talles-->
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <h1>Zapatillas Adidas U Path Run</h1>
+                    <p>Las zapatillas U_Path Run lucen un diseño innovador que combina lo clásico y lo moderno.
+                      Presentan un exterior de malla suave y transpirable, perfecta para tu día a día. El sistema de cordones exclusivo
+                      aporta un toque vanguardista a tu estilo, mientras que el refuerzo del talón con tirador te ofrece mayor estabilidad. La mediasuela liviana de EVA garantiza una pisada más cómoda.</p>
                     <h3>$15999</h3>
                     <h4>Talles</h4>
                     <div >
@@ -86,30 +92,36 @@
                 </div>
             </section>
             <!--Recomendados-->
-            <div>
-                <h2>Recomendados</h2>
-                <div class="card text-center" style="width: 18rem;">
-                    <img src="../../assets/imgProductos/adidas/adidasPro_0.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Zapatillas Adidas U Path Run</h5>
-                      <a href="adidas.html" class="btn btn-primary">Ver</a>
+            <!--Seccion con los productos-->
+            <h3>Recomendados</h3>
+            <section class="productoFlexMobile">
+              
+                <!--Primera fila-->
+                <div class="row g-3">
+                    <div class="card text-center col-md-4" style="width: 18rem;">
+                        <img src="../../assets/imgProductos/adidas/adidasPro_sf.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Zapatillas Adidas U Path Run</h5>
+                          <a href="adidas.html" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card text-center col-md-4" style="width: 18rem;">
+                        <img src="../../assets/imgProductos/nike/nikePro_sf.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Zapatillas Nike Air Max 97</h5>
+                          <a href="nike.html" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card text-center col-md-4" style="width: 18rem;">
+                        <img src="../../assets/imgProductos/reebok/reebokPro_sf.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Zapatillas Reebok Flashfilm Train 2.0</h5>
+                          <a href="reebok.html" class="btn btn-primary">Ver</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card text-center" style="width: 18rem;">
-                    <img src="../../assets/imgProductos/nike/nikePro_0.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Zapatillas Nike Air Max 97</h5>
-                      <a href="nike.html" class="btn btn-primary">Ver</a>
-                    </div>
-                </div>
-                <div class="card text-center" style="width: 18rem;">
-                    <img src="../../assets/imgProductos/reebok/reebokPro_0.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Zapatillas Reebok Flashfilm Train 2.0</h5>
-                      <a href="reebok.html" class="btn btn-primary">Ver</a>
-                    </div>
-                </div>
-            </div>
+            </section>
+            
         </main>
         <footer>
             <div>

@@ -17,32 +17,37 @@
     <body>
         <header>
             <!--Menu-->
-            <nav class="navbar">
-                <!--Logo-->
-                <div>
-                    <h4 class="col-md-1">US</h4>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFCC84;">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">US</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/catalogo.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
                 </div>
-                <!--Barra navegación-->
-                <ul class="nav justify-content-center col-md-11">
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="index.html">Inicio</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="pages/catalogo.html">Catalogo</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="pages/nosotros.html">Nosotros</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="pages/contacto.html">Contacto</a></h5>
-                  </li>
-                </ul>
+              </div>
             </nav>
         </header>
-        <main>
+        <main class="flexIndex">
             <!--Carrusel marcas-->
             <section  class="row g-2">
-              
+              <div class="col-md-4">
+                <h1>Marcas</h1>
+              </div>
               <div id="carouselExampleSlidesOnly" class="carousel slide col-md-8" data-bs-ride="carousel">
                   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
@@ -66,14 +71,12 @@
                       </button>
                   </div>
               </div>
-              <div class="col-md-4 flexIndex">
-                <h1>Marcas</h1>
-              </div>
+              
             </section>
             
             <!--Tendencias-->
             <section class="row g-2">
-              <div class="col-md-4 flexIndex">
+              <div class="col-md-4">
                 <h1>Tendencias</h1>
               </div>
               <div id="carouselExampleControls" class="carousel slide col-md-8" data-bs-ride="carousel">

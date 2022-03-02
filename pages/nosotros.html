@@ -14,43 +14,62 @@
     <body>
         <header>
             <!--Menu-->
-            <nav class="navbar">
-                <!--Logo-->
-                <div>
-                    <h4 class="col-md-1">US</h4>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFCC84;">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">US</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="catalogo.html">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
                 </div>
-                <!--Barra navegación-->
-                <ul class="nav justify-content-center col-md-11">
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="../index.html">Inicio</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="catalogo.html">Catalogo</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="nosotros.html">Nosotros</a></h5>
-                  </li>
-                  <li class="nav-item">
-                    <h5><a class="nav-link" href="contacto.html">Contacto</a></h5>
-                  </li>
-                </ul>
+              </div>
             </nav>
         </header>
-        <main class="row g-2 nosotrosFlex">
+        <main class="nosotrosFlex">
             <!--Articulo opara realizar una breve descripcion del sitio web-->
-            <article class="col-md-8">
+            <article>
                 <h1>US UrbanSport</h1>
                 <p>US UrbanSport es un sitio web realizado a modo de proyecto final del curso "Desarrollo web" dictado por CoderHouse.
-                    El sitio reresenta un catalogo de una tienda de zapatillas, contiene 5 páginas que son:
+                    El sitio representa un catalogo de una tienda de zapatillas, contiene 5 páginas que son:
                     Inicio, Catalogo, Nosotros, Contacto, y los articulos, cada uno con su respectiva página.
-                    Para realizar el sitio web se utilizo HTL, CSS, bootstrap, SASS, git y github para controlar las versiones.
+                    Para realizar el sitio web se utilizo HTML, CSS, bootstrap, SASS, git y github para controlar las versiones.
                 </p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nostrum veniam, eveniet sapiente nihil quaerat, inventore laudantium dolore et earum quae non vitae repellendus nam tempora alias. Rerum, sed accusantium.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nostrum veniam, eveniet sapiente nihil quaerat, inventore laudantium dolore et earum quae non vitae repellendus nam tempora alias. Rerum, sed accusantium.</p>
+                <p>
+                  Hay 3 versiones del proyecto, la primera donde se empezaba a plantear la idea, intentando encontrar cierto orden en el sitio,
+                  sin especificar articulos o nombres de los mismos.
+                </p>
+                <p>
+                  La segunda version ya especificaba nombre de los articulos pero no se diferenciaban entre si, se empezo a pensar un estilo que darle,
+                  utilice bootstrap para agregar un header, un footer, y algunas cards para mostrar los articulos.
+                  Se agrego un carrusel a la pagina index, el cual mostraba las marcas de los articulos a la venta.
+                </p>
+                <p>
+                  La tercer version del proyeto, ya presenta una idea clara, con 5 secciones bien definidas, una paleta de colores elegida,
+                  y todas las paginas del sitio creadas.
+                  En esta etapa se utilizo SASS para crear una hoja de estilo legible y ordenada.
+                  Tambien se cargo el sitio a github.
+                </p>
+
             </article>
-            <!--Seccon ara poner las imagenes del proceso-->
-            <section class="col-md-4 container">
-                <img src="../assets/proceso.png" alt="...">
+            <!--Seccion para poner las imagenes del proceso-->
+            <section>
+                <img  src="../assets/proceso_1.jpeg" alt="...">
+                <img  src="../assets/proceso_2.jpeg" alt="...">
+                <img  src="../assets/proceso_3.jpeg" alt="...">
             </section>
         </main>
         <footer>

@@ -9,8 +9,6 @@ body {
 header {
   background-color: #FFCC84;
   color: black; }
-  header nav div {
-    padding: 15px; }
 
 footer {
   background-color: #FFCC84;
@@ -28,8 +26,17 @@ footer {
 
 .flexIndex {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column;
+  margin: 30px; }
+  .flexIndex section {
+    align-items: center;
+    justify-content: center; }
+    .flexIndex section div h1 {
+      background-color: #FFCC84;
+      text-align: center; }
+    .flexIndex section div h1:hover {
+      background-color: #FFA86B;
+      color: #FFE69E; }
 
 .catalogoFlex {
   display: flex;
@@ -40,18 +47,84 @@ footer {
     margin: 10px; }
 
 .nosotrosFlex {
-  align-items: center; }
+  display: flex;
+  flex-direction: column; }
   .nosotrosFlex article {
-    padding: 10px;
-    text-align: center; }
+    text-align: center;
+    margin: 20px; }
   .nosotrosFlex section {
-    padding: 10px; }
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; }
 
 .contactoFlex {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  margin-top: 150px;
-  margin-bottom: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center; }
+  .contactoFlex h3 {
+    margin: 20px; }
+  .contactoFlex form {
+    margin: 20px;
+    margin-bottom: 250px; }
+
+.productoFlex {
+  display: flex;
+  flex-direction: column; }
+  .productoFlex section {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .productoFlex section div {
+      margin: 10px; }
+  .productoFlex h3 {
+    margin: 10px; }
+
+@media (max-width: 991px) {
+  .flexIndex {
+    display: flex;
+    flex-direction: column;
+    margin: 30px; }
+    .flexIndex section {
+      margin: 30px;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+  .nosotrosFlex section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; }
+    .nosotrosFlex section img {
+      margin: 20px; }
+  .contactoFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .productoFlex {
+    display: flex;
+    flex-direction: column;
+    width: 90%; }
+    .productoFlex section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .productoFlex section div {
+        margin: 10px; }
+    .productoFlex h3 {
+      margin: 10px;
+      text-align: center; }
+  .productoFlexMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .productoFlexMobile div {
+      display: flex;
+      flex-direction: column;
+      margin: 10px; } }
